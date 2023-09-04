@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "name": "Ui Creators",
+        "user_id": "ui_creators",
+        "prof_image":"images/suggest1.png"
+    },
+    {
+        "id":"2",
+        "name": "Twin UI",
+        "user_id": "ui_twin",
+        "prof_image":"images/suggest2.png"
+    },
+    {
+        "id":"3",
+        "name": "UXUI Topics",
+        "user_id": "ui_topics",
+        "prof_image":"images/suggest3.png"
+    }
+]

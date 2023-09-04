@@ -1,14 +1,8 @@
-.fRight{
-    float: right;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 
 .rightSideBar{
-    width: 425px;
-    height: 759px;
     flex-shrink: 0;
-    margin-right: 38px;
-    margin-top: 6.1rem;
+    margin-right: 5%;
 }
 
 .rightSideBarRect{
@@ -42,42 +36,14 @@
 .followerImage{
     width: 50px;
     height: 51.284px;
-     
-}
-
-.followerImage1{
-    background: url("../assets/follower1.png");
     background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-.followerImage2{
-    background: url("../assets/follower2.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-.followerImage3{
-    background: url("../assets/follower3.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-.followerImage4{
-    background: url("../assets/follower4.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 9999px;    
 }
 
 .followerName{
+    width: 75%;
     color: #000;
     font-family: Roboto;
     font-size: 16px;
@@ -95,91 +61,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.followers Button{
-    background-color: blue;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    -webkit-margin-start: auto;
-    border: 1px ;
-    border-radius: 5px;
-}
-
-.userId{
-    margin-left: 2px;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-/*Suggest Followers */
-
-
-.suggestFollowers{
-    display: flex;
-    margin-top: 34px;
-}
-
-.suggestFollowerImage{
-    width: 50px;
-    height: 51.284px;
-     
-}
-
-.suggestFollowerImage1{
-    background: url("../assets/suggest1.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-.suggestFollowerImage2{
-    background: url("../assets/suggest2.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-.suggestFollowerImage3{
-    background: url("../assets/suggest3.png");
-    background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: center;
-     border-radius: 9999px;
-}
-
-
-.suggestFollowerName{
-    color: #000;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 10px;
-    padding-top: 5px;
-}
-
-.suggestFollowerName p span{
-    color: #8D8D8D;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.suggestFollowers Button{
-    background-color: blue;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    -webkit-margin-start: auto;
-    border: 1px ;
-    border-radius: 5px;
 }
 
 .userId{

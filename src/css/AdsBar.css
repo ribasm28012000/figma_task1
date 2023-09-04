@@ -1,0 +1,23 @@
+.adsHead{
+    margin-top: 8rem;
+    margin-left: 2rem;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.add img{
+    margin-left: 2rem;
+    margin-top: 1.94rem;
+    width: 16.625rem;
+    height: 13rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+}
+.addContent{
+    margin-top: 1.12rem;
+    margin-left: 1.94rem;
+}

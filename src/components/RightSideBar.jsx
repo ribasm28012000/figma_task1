@@ -1,67 +1,53 @@
 import React from 'react'
 import '../css/RightSideBar.css'
+import Follower from '../Follower.json'
+import Suggest from '../SuggestFollowers.json'
 
 
 const RightSideBar = () => {
+   
+  const handleFollow=(props)=>{
+    console.log(`You Followed ${props.name}`)
+  }
+
+  const handleAccept=(props)=>{
+    console.log(`You and ${props.name} are now Connected`)
+  }
+
   return (
     <>
-    <div className="rightSideBar fRight">
+    <div className="rightSideBar w-[425px] h-[759px] mt-[100px] float-right relative">
       <div className='rightSideBarRect  absolute rounded-[15px] border border-zinc-500 border-opacity-25'/>
       <div className="innerRect fRight w-[306px] h-[667.71px]  absolute ">
           <div className="heading headingFollow">
             Recent Followers
-            <div className="followers">
-              <div className='followerImage1 followerImage'/>
+          {
+            Follower && Follower.map(followers=>{
+              return(
+              <div className="followers" key={followers.id}>
+              <img className="followerImage" src={followers.prof_image} alt={followers.id} />
               <div className="followerName">
-                <p>Jason Haider <br/> <span className='userId'>@jaison_haider</span></p>
+                <p>{followers.name}<br/> <span className='userId'>@{followers.user_id}</span></p>
+              </div>  
+                <button className='w-[63px] h-[31px] bg-blue-800 rounded text-white text-base font-medium' onClick={()=>handleAccept(followers)}>Accept</button>
               </div>
-              <button className='acceptButton'>Accept</button>
-            </div>
-            <div className="followers">
-              <div className='followerImage2 followerImage'/>
-              <div className="followerName">
-                <p>ux wing <br/> <span className='userId'>@ux_wing</span></p>
-              </div>
-              <button className='acceptButton'>Accept</button>
-            </div>
-            <div className="followers">
-              <div className='followerImage3 followerImage'/>
-              <div className="followerName">
-                <p>Illustration <br/> <span className='userId'>@illu_work</span></p>
-              </div>
-              <button className='acceptButton'>Accept</button>
-            </div>
-            <div className="followers">
-              <div className='followerImage4 followerImage'/>
-              <div className="followerName">
-                <p>Art academy <br/> <span className='userId'>@art_work</span></p>
-              </div>
-              <button className='acceptButton'>Accept</button>
-            </div>
-            </div>
+             ) })
+          }
+          </div>
+
           <div className="heading headingSuggest">
             Suggested For You
-            <div className="suggestFollowers">
-              <div className='suggestFollowerImage1 followerImage'/>
-              <div className="suggestFollowerName">
-                <p>UI Creators<br/> <span className='userId'>@ui_creators</span></p>
+            {
+            Suggest && Suggest.map(suggest=>{
+              return(<div className="followers" key={suggest.id}>
+              <img className="followerImage" src={suggest.prof_image} alt={suggest.id} />
+              <div className="followerName">
+                <p>{suggest.name}<br/> <span className='userId'>@{suggest.user_id}</span></p>
+              </div>  
+                <button className='w-[63px] h-[31px] bg-blue-800 rounded text-white text-base font-medium' onClick={()=>handleFollow(suggest)}>Follow</button>
               </div>
-              <button className='followButton'>Follow</button>
-            </div>
-            <div className="suggestFollowers">
-              <div className='suggestFollowerImage2 followerImage'/>
-              <div className="suggestFollowerName">
-                <p>Twin UI<br/> <span className='userId'>@ui_twin</span></p>
-              </div>
-              <button className='followButton'>Follow</button>
-            </div>
-            <div className="suggestFollowers">
-              <div className='suggestFollowerImage3 followerImage'/>
-              <div className="suggestFollowerName">
-                <p>UXUI Topics<br/> <span className='userId'>@ui_topics</span></p>
-              </div>
-              <button className='followButton'>Follow</button>
-            </div>
+             ) })
+          }
             </div>
       </div>
     </div>

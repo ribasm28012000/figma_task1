@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+.menuHead{
+    margin-top: 2.31rem;
+    margin-left: 2rem;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.menuBar{
+    margin-top: 2.94rem;
+    margin-left: 4.56rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.25rem;
+    display: inline-flex;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center ;
+    gap: 1.7rem;
+    display: inline-flex;
+}
+
+.menu img{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+.postAdd{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: .375rem .75rem;
+    border-radius: 0.25rem;
+    border: 3px #0077B5 ;
+    background: #0077B5;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+
+.addPost{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-family: Roboto;
+}
+
